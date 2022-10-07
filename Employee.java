@@ -45,7 +45,7 @@ public class Employee {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    protected Object clone() {
         return new Employee(this);
     }
 }
