@@ -1,5 +1,3 @@
-
-
 public class Department {
     private String name;
     private Lab[] labs= new Lab[20];
@@ -14,7 +12,17 @@ public class Department {
 
     public Department(Department other){
         this.name = other.getName();
-        this.labs = other.getLabs();
+        this.HOD = new Employee(other.getHOD());
+        this.labIncharge = new Employee(other.getLabIncharge());
+
+        // Creating deep copy of the array
+        Lab temp[] = new Lab[other.getLabs().length];
+        for (int i = 0; i < temp.length; i++) {
+            if(other.getLabs()[i] != null){
+                temp[i] = new Lab(other.getLabs()[i]);
+            }
+        }
+        this.labs = temp;
     }
 
     public Lab[] getLabs() {
@@ -38,7 +46,7 @@ public class Department {
     }
 
     public void setHOD(Employee hOD) {
-        HOD = hOD;
+        this.HOD = hOD;
     }
 
     public void setLabIncharge(Employee labIncharge) {
@@ -47,10 +55,9 @@ public class Department {
 
     public void printLabs(){
         for(Lab lab: labs){
-            if(lab == null){
-                break;
+            if(lab != null){
+                System.out.println(lab);
             }
-            System.out.println(lab);
         }
     }
 
@@ -61,5 +68,19 @@ public class Department {
                 break;
             }
         }
+    }
+
+    public void removeLab(Lab lab){
+        for (int i = 0; i < labs.length; i++) {
+            if(labs[i] != null && labs[i].equals(lab)){
+                labs[i] = null;
+                break;
+            }
+        }
+    }
+
+    @Override
+    protected Object clone() {
+        return new Department(this);
     }
 }

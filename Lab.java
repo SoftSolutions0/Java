@@ -10,8 +10,16 @@ public class Lab {
 
     public Lab(Lab other){
         this.name = other.getName();
-        this.labAttendant = other.getLabAttendant();
-        this.computers = other.getComputers();
+        this.labAttendant = new Employee(other.getLabAttendant());
+        
+        // Creating deep copy of the array
+        PC temp[] = new PC[other.getComputers().length];
+        for (int i = 0; i < temp.length; i++) {
+            if(other.getComputers()[i] != null){
+                temp[i] = new PC(other.getComputers()[i]);
+            }
+        }
+        this.computers = temp;
     }
 
     public PC[] getComputers() {
@@ -58,11 +66,16 @@ public class Lab {
 
     public void removePC(PC pc){
         for (int i = 0; i < computers.length; i++) {
-            if(computers[i].equals(pc)){
+            if (computers[i] != null && computers[i].equals(pc)){
                 computers[i] = null;
                 break;
             }
         }
+    }
+
+    @Override
+    protected Object clone() {
+        return new Lab(this);
     }
 
 }

@@ -82,11 +82,14 @@ public class PC {
     @Override
     public boolean equals(Object obj) {
         PC temp = (PC) obj;
+        if (temp == null){
+            return false;
+        }
         return this.assetID == temp.getAssetID();
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    protected Object clone() {
         return new PC(this);
     }
 }

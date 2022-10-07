@@ -20,5 +20,6 @@ public class Main {
         lab1.printPCs();
         lab1.removePC(pc2);
         lab1.printPCs();
+        // System.out.println(department != department.clone());
     }
 }
