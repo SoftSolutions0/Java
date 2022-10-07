@@ -61,7 +61,7 @@ public class Lab {
 
     @Override
     public String toString() {
-        return String.format("Name: %s; Lab Attendant: %s; ", name, labAttendant);
+        return String.format("Name: %s; Lab Attendant: %s; Total PCs: %d", name, labAttendant, totalPCs());
     }
 
     public void removePC(PC pc){
@@ -76,6 +76,25 @@ public class Lab {
     @Override
     protected Object clone() {
         return new Lab(this);
+    }
+
+    public int searchPC(String name){
+        for (int i = 0; i < computers.length; i++) {
+            if (computers[i] != null && computers[i].getName().equalsIgnoreCase(name)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int totalPCs(){
+        int count = 0;
+        for (PC computer : computers) {
+            if (computer != null){
+                count++;
+            }
+        }
+        return count;
     }
 
 }

@@ -1,17 +1,19 @@
 public class Employee {
     private String name;
-    private String employeeID;
+    private int employeeID;
     private String designation;
+    static int count = 0;
 
-    public Employee(String name, String employeeID, String designation) {
+    public Employee(String name, String designation) {
         this.name = name;
-        this.employeeID = employeeID;
+        this.employeeID = count++;
         this.designation = designation;
     }
 
+    // Copy Constructor
     public Employee(Employee other){
         this.name = other.getName();
-        this.employeeID = other.getEmployeeID();
+        this.employeeID = count++;
         this.designation = other.getDesignation();
     }
 
@@ -19,7 +21,7 @@ public class Employee {
         return designation;
     }
 
-    public String getEmployeeID() {
+    public int getEmployeeID() {
         return employeeID;
     }
 
@@ -33,10 +35,6 @@ public class Employee {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setEmployeeID(String employeeID) {
-        this.employeeID = employeeID;
     }
 
     @Override

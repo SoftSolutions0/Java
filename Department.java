@@ -10,6 +10,7 @@ public class Department {
         this.labIncharge = labIncharge;
     }
 
+    // Copy Constructor
     public Department(Department other){
         this.name = other.getName();
         this.HOD = new Employee(other.getHOD());
@@ -23,6 +24,11 @@ public class Department {
             }
         }
         this.labs = temp;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Name: %s; HOD: %s, Total Labs: %d", name, HOD, totalLabs());
     }
 
     public Lab[] getLabs() {
@@ -79,8 +85,63 @@ public class Department {
         }
     }
 
+    public void printPCs(){
+        for(Lab lab: labs){
+            if(lab != null){
+                System.out.println(lab.getName() + ": ");
+                lab.printPCs();
+            }
+        }
+    }
+
     @Override
     protected Object clone() {
         return new Department(this);
+    }
+
+    public int searchLab(String name){
+        for (int i = 0; i < labs.length; i++) {
+            if(labs[i] != null && labs[i].getName().equalsIgnoreCase(name)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int totalLabs(){
+        int count = 0;
+        for (Lab lab : labs) {
+            if(lab != null){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // Adding some data in department
+    {
+        // Create some Employees
+        Employee labAttendant1 = new Employee("Dr. C", "Lab Attendant");
+        Employee labAttendant2 = new Employee("Dr. D", "Lab Attendant");
+
+        // Create some labs
+        Lab lab1 = new Lab("Lab 1", labAttendant1);
+        Lab lab2 = new Lab("Lab 2", labAttendant2);
+
+        // Create some PCs
+        PC pc1 = new PC("PC 1", "LCD 1", 8, 1000, false);
+        PC pc2 = new PC("PC 2", "LCD 2", 16, 500, true);
+        PC pc3 = new PC("PC 3", "LCD 3", 8, 500, true);
+        PC pc4 = new PC("PC 4", "LCD 4", 16, 1000, false);
+        
+        // Adding PCs to labs
+        lab1.addPC(pc1);
+        lab1.addPC(pc2);
+        lab2.addPC(pc3);
+        lab2.addPC(pc4);
+
+        // Adding labs to department
+        this.addLab(lab1);
+        this.addLab(lab2);
     }
 }
