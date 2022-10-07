@@ -45,10 +45,9 @@ public class Lab {
 
     public void printPCs(){
         for(PC computer: computers){
-            if (computer == null){
-                break;
+            if (computer != null){
+                System.out.println(computer);
             }
-            System.out.println(computer);
         }
     }
 
@@ -57,6 +56,14 @@ public class Lab {
         return String.format("Name: %s; Lab Attendant: %s; ", name, labAttendant);
     }
 
+    public void removePC(PC pc){
+        for (int i = 0; i < computers.length; i++) {
+            if(computers[i].equals(pc)){
+                computers[i] = null;
+                break;
+            }
+        }
+    }
 
 }
 

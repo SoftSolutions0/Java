@@ -16,7 +16,9 @@ public class Main {
         PC pc2 = new PC("2", "PC 2", "LCD 2", 2048, 1000, false);
         lab1.addPC(pc1);
         lab1.addPC(pc2);
-        department.printLabs();
+        // department.printLabs();
+        lab1.printPCs();
+        lab1.removePC(pc2);
         lab1.printPCs();
     }
 }
