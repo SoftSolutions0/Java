@@ -9,6 +9,10 @@ public class Main {
         // Create a Department
         Department department = new Department("Computer Science", hod, labIncharge);
 
+        printMenu(department);
+    }
+
+    public static void printMenu(Department department) {
         Scanner sc = new Scanner(System.in);
         
         while (true) {
