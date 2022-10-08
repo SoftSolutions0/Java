@@ -19,7 +19,7 @@ public class Main {
             System.out.println("5. Remove PC from a Lab");
             System.out.println("6. Print PCs of a Lab");
             System.out.println("7. Print all PCs of a Department");
-            System.out.println("8. Exit");
+            System.out.println("8. Exit Program");
             System.out.println("Enter your choice: ");
             int choice = sc.nextInt();
             sc.nextLine();
