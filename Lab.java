@@ -1,28 +1,43 @@
 public class Lab {
+    private int ID;
     private String name;
     private Employee labAttendant;
     private PC[] computers = new PC[100];
+    static int count = 0;
 
     public Lab(String name, Employee labAttendant) {
+        this.ID = count++;
         this.name = name;
         this.labAttendant = labAttendant;
     }
+    
+    public Lab(int ID, String name, Employee labAttendant) {
+        this.ID = ID;
+        this.name = name;
+        this.labAttendant = labAttendant;
+        count++;
+    }
 
     public Lab(Lab other){
+        this.ID = count++;
         this.name = other.getName();
         this.labAttendant = new Employee(other.getLabAttendant());
         
         // Creating deep copy of the array
-        PC temp[] = new PC[other.getComputers().length];
+        PC temp[] = new PC[other.getPCs().length];
         for (int i = 0; i < temp.length; i++) {
-            if(other.getComputers()[i] != null){
-                temp[i] = new PC(other.getComputers()[i]);
+            if(other.getPCs()[i] != null){
+                temp[i] = new PC(other.getPCs()[i]);
             }
         }
         this.computers = temp;
     }
 
-    public PC[] getComputers() {
+    public int getID() {
+        return ID;
+    }
+    
+    public PC[] getPCs() {
         return this.computers;
     }
 
@@ -52,16 +67,20 @@ public class Lab {
     }
 
     public void printPCs(){
+        System.out.println(String.format("%70s","").replace(" ", "="));
+        System.out.println(String.format("%5s   %-22s %-15s %10s %10s", "ID", "Name", "LCD Name", "RAM (GB)", "SSD (GB)"));
+        System.out.println(String.format("%70s","").replace(" ", "="));
         for(PC computer: computers){
             if (computer != null){
                 System.out.println(computer);
             }
         }
+        System.out.println(String.format("%70s","").replace(" ", "="));
     }
 
     @Override
     public String toString() {
-        return String.format("Name: %s; Lab Attendant: %s; Total PCs: %d", name, labAttendant, totalPCs());
+        return String.format("%5s %-8s %-20s %5d", ID, name, labAttendant, totalPCs());
     }
 
     public void removePC(PC pc){
@@ -96,6 +115,5 @@ public class Lab {
         }
         return count;
     }
-
 }
 

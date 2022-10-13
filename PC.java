@@ -1,5 +1,5 @@
 public class PC {
-    private String assetID;
+    private int ID;
     private String name;
     private String LCDName;
     private int RAMSizeGB;
@@ -8,16 +8,26 @@ public class PC {
     static int count = 0;
 
     public PC(String name, String LCDName, int RAMSizeGB, int DiskSizeGB, boolean hasGraphicsCard) {
-        this.assetID = String.format("PC-%03d", count++);
+        this.ID = count++;
         this.name = name;
         this.LCDName = LCDName;
         this.RAMSizeGB = RAMSizeGB;
         this.DiskSizeGB = DiskSizeGB;
         this.hasGraphicsCard = hasGraphicsCard;
     }
+    
+    public PC(int ID, String name, String LCDName, int RAMSizeGB, int DiskSizeGB, boolean hasGraphicsCard) {
+        this.ID = ID;
+        this.name = name;
+        this.LCDName = LCDName;
+        this.RAMSizeGB = RAMSizeGB;
+        this.DiskSizeGB = DiskSizeGB;
+        this.hasGraphicsCard = hasGraphicsCard;
+        count++;
+    }
 
     public PC(PC other){
-        this.assetID = String.format("PC-%03d", count++);
+        this.ID = count++;;
         this.name = other.getName();
         this.LCDName = other.getLCDName();
         this.RAMSizeGB = other.getRAMSizeGB();
@@ -25,8 +35,8 @@ public class PC {
         this.hasGraphicsCard = other.gethasGraphicsCard();
     }
 
-    public String getAssetID() {
-        return assetID;
+    public int getID() {
+        return ID;
     }
 
     public int getDiskSizeGB() {
@@ -65,13 +75,13 @@ public class PC {
         this.name = name;
     }
 
-    public void setRAMSizeGB(int rAMSizeMB) {
-        RAMSizeGB = rAMSizeMB;
+    public void setRAMSizeGB(int RAMSizeMB) {
+        RAMSizeGB = RAMSizeMB;
     }
 
     @Override
     public String toString() {
-        return String.format("Asset ID: %s; Name: %s; LCDName: %s, RAMSize: %dGB; DiskSpace: %dGB", assetID, name, LCDName, RAMSizeGB, DiskSizeGB);
+        return String.format("%5d   %-22s %-15s %10d %10d", ID, name, LCDName, RAMSizeGB, DiskSizeGB);
     }
 
     @Override
@@ -80,7 +90,7 @@ public class PC {
         if (temp == null){
             return false;
         }
-        return this.assetID.equals(temp.getAssetID());
+        return this.ID == temp.getID();
     }
 
     @Override

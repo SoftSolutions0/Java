@@ -28,7 +28,7 @@ public class Department {
 
     @Override
     public String toString() {
-        return String.format("Name: %s; HOD: %s, Total Labs: %d", name, HOD, totalLabs());
+        return String.format("Department Name: %s\nHOD Name: %s\nLab Incharge Name: %s\nTotal Labs: %d", name, HOD, labIncharge, totalLabs());
     }
 
     public Lab[] getLabs() {
@@ -39,16 +39,16 @@ public class Department {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Employee getHOD() {
         return HOD;
     }
 
     public Employee getLabIncharge() {
         return labIncharge;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setHOD(Employee hOD) {
@@ -60,17 +60,21 @@ public class Department {
     }
 
     public void printLabs(){
+        System.out.println(String.format("%43s","").replace(" ", "="));
+        System.out.println(String.format("%5s %-8s %-20s %5s", "ID", "Name", "Lab Attendant", "PCs"));
+        System.out.println(String.format("%43s","").replace(" ", "="));
         for(Lab lab: labs){
             if(lab != null){
                 System.out.println(lab);
             }
         }
+        System.out.println(String.format("%43s","").replace(" ", "="));
     }
 
     public void addLab(Lab lab){
         for (int i = 0; i < labs.length; i++) {
             if(labs[i] == null){
-                labs[i] = new Lab(lab);
+                labs[i] = lab;
                 break;
             }
         }
@@ -81,15 +85,6 @@ public class Department {
             if(labs[i] != null && labs[i].equals(lab)){
                 labs[i] = null;
                 break;
-            }
-        }
-    }
-
-    public void printPCs(){
-        for(Lab lab: labs){
-            if(lab != null){
-                System.out.println(lab.getName() + ": ");
-                lab.printPCs();
             }
         }
     }
@@ -108,6 +103,15 @@ public class Department {
         return -1;
     }
 
+    public int getLabIndex(int index) {
+        for (int i = 0; i < labs.length; i++) {
+            if (labs[i] != null && labs[i].getID() == index) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public int totalLabs(){
         int count = 0;
         for (Lab lab : labs) {
@@ -116,32 +120,5 @@ public class Department {
             }
         }
         return count;
-    }
-
-    // Adding some data in department
-    {
-        // Create some Employees
-        Employee labAttendant1 = new Employee("Dr. C", "Lab Attendant");
-        Employee labAttendant2 = new Employee("Dr. D", "Lab Attendant");
-
-        // Create some labs
-        Lab lab1 = new Lab("Lab 1", labAttendant1);
-        Lab lab2 = new Lab("Lab 2", labAttendant2);
-
-        // Create some PCs
-        PC pc1 = new PC("PC 1", "LCD 1", 8, 1000, false);
-        PC pc2 = new PC("PC 2", "LCD 2", 16, 500, true);
-        PC pc3 = new PC("PC 3", "LCD 3", 8, 500, true);
-        PC pc4 = new PC("PC 4", "LCD 4", 16, 1000, false);
-        
-        // Adding PCs to labs
-        lab1.addPC(pc1);
-        lab1.addPC(pc2);
-        lab2.addPC(pc3);
-        lab2.addPC(pc4);
-
-        // Adding labs to department
-        this.addLab(lab1);
-        this.addLab(lab2);
     }
 }

@@ -1,19 +1,30 @@
 public class Employee {
-    private String name;
-    private int employeeID;
+    private String firstName;
+    private String lastName;
+    private int ID;
     private String designation;
     static int count = 0;
 
-    public Employee(String name, String designation) {
-        this.name = name;
-        this.employeeID = count++;
+    public Employee(String firstName, String lastName, String designation) {
+        this.ID = count++;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.designation = designation;
     }
 
+    public Employee(int ID, String firstName, String lastName, String designation) {
+        this.ID = ID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.designation = designation;
+        count++;
+    }
+
     // Copy Constructor
-    public Employee(Employee other){
-        this.name = other.getName();
-        this.employeeID = count++;
+    public Employee(Employee other) {
+        this.firstName = other.getFirstName();
+        this.lastName = other.getLastName();
+        this.ID = count++;
         this.designation = other.getDesignation();
     }
 
@@ -21,25 +32,33 @@ public class Employee {
         return designation;
     }
 
-    public int getEmployeeID() {
-        return employeeID;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getName() {
-        return name;
+    public int getID() {
+        return ID;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public void setDesignation(String designation) {
         this.designation = designation;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
     public String toString() {
-        return name;
+        return firstName + " " + lastName;
     }
 
     @Override
