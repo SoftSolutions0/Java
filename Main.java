@@ -13,7 +13,6 @@ public class Main {
     
     public static void main(String[] args) throws IOException {
         
-        
         // Create a Department
         Employee HOD = new Employee("Dr", "Ahmed" , "HOD");
         Employee labIncharge = new Employee("Dr.","Ali", "Lab Incharge");
@@ -67,7 +66,6 @@ public class Main {
 
         System.out.println("Data Loaded.");
     }
-
 
     // To save data to files
     public static void saveData(Department department) throws IOException {
