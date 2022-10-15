@@ -90,9 +90,9 @@ public class Menu {
 
     public static void addPC(Department department) {
         System.out.println("Enter Lab Name: ");
-        String labName1 = sc.nextLine();
-        int index1 = department.searchLab(labName1);
-        if (index1 != -1) {
+        String labName = sc.nextLine();
+        int index = department.searchLab(labName);
+        if (index != -1) {
             System.out.println("Enter PC Name: ");
             String pcName = sc.nextLine();
             System.out.println("Enter LCD Name: ");
@@ -103,7 +103,7 @@ public class Menu {
             int hardDiskSize = sc.nextInt();
             System.out.println("Is PC has a graphic card? (true/false): ");
             boolean hasGraphicCard = sc.nextBoolean();
-            department.getLabs()[index1].addPC(new PC(pcName, monitorName, ramSize, hardDiskSize, hasGraphicCard));
+            department.getLabs()[index].addPC(new PC(pcName, monitorName, ramSize, hardDiskSize, hasGraphicCard));
             System.out.println("PC added successfully!\n");
         } else {
             System.out.println("Lab not found!\n");
@@ -112,14 +112,14 @@ public class Menu {
 
     public static void removePC(Department department) {
         System.out.println("Enter Lab Name: ");
-        String labName2 = sc.nextLine();
-        int index2 = department.searchLab(labName2);
-        if (index2 != -1) {
+        String labName = sc.nextLine();
+        int index = department.searchLab(labName);
+        if (index != -1) {
             System.out.println("Enter PC Name: ");
             String pcName = sc.nextLine();
-            int index3 = department.getLabs()[index2].searchPC(pcName);
-            if (index3 != -1) {
-                department.getLabs()[index2].removePC(department.getLabs()[index2].getPCs()[index3]);
+            int index2 = department.getLabs()[index].searchPC(pcName);
+            if (index2 != -1) {
+                department.getLabs()[index].removePC(department.getLabs()[index].getPCs()[index2]);
                 System.out.println("PC removed successfully!\n");
             } else {
                 System.out.println("PC not found!\n");
@@ -131,10 +131,10 @@ public class Menu {
 
     public static void printPCs(Department department) {
         System.out.println("Enter Lab Name: ");
-        String labName3 = sc.nextLine();
-        int index4 = department.searchLab(labName3);
-        if (index4 != -1) {
-            department.getLabs()[index4].printPCs();
+        String labName = sc.nextLine();
+        int index = department.searchLab(labName);
+        if (index != -1) {
+            department.getLabs()[index].printPCs();
         } else {
             System.out.println("Lab not found!\n");
         }
