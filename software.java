@@ -11,4 +11,36 @@ public class Software {
         this.author = author;
         this.platform = platform;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getPlatform() {
+        return platform;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
 }
