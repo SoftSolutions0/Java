@@ -3,6 +3,7 @@ public class Lab {
     private String name;
     private Employee labAttendant;
     private PC[] computers = new PC[100];
+    private Software[] softwares = new Software[100];
     static int count = 0;
 
     public Lab(String name, Employee labAttendant) {
@@ -23,7 +24,7 @@ public class Lab {
         this.name = other.getName();
         this.labAttendant = new Employee(other.getLabAttendant());
         
-        // Creating deep copy of the array
+        // Creating deep copy of the PC array
         PC temp[] = new PC[other.getPCs().length];
         for (int i = 0; i < temp.length; i++) {
             if(other.getPCs()[i] != null){
@@ -31,6 +32,14 @@ public class Lab {
             }
         }
         this.computers = temp;
+
+        // Creating deep copy of the Software array
+        Software temp2[] = new Software[other.getSoftwares().length];
+        for (int i = 0; i < temp2.length; i++) {
+            if(other.getSoftwares()[i] != null){
+                temp2[i] = new Software(other.getSoftwares()[i]);
+            }
+        }
     }
 
     public int getID() {
@@ -39,6 +48,10 @@ public class Lab {
     
     public PC[] getPCs() {
         return this.computers;
+    }
+
+    public Software[] getSoftwares() {
+        return softwares;
     }
 
     public Employee getLabAttendant() {
@@ -80,7 +93,7 @@ public class Lab {
 
     @Override
     public String toString() {
-        return String.format("%5s %-8s %-20s %5d", ID, name, labAttendant, totalPCs());
+        return String.format("%5s %-8s %-20s %5d %5d", ID, name, labAttendant, totalPCs(), totalSoftwares());
     }
 
     public void removePC(PC pc){
@@ -115,5 +128,54 @@ public class Lab {
         }
         return count;
     }
+
+    public void addSoftware(Software software){
+        for (int i = 0; i < softwares.length; i++) {
+            if(softwares[i] == null){
+                softwares[i] = software;
+                break;
+            }
+        }
+    }
+
+    public void removeSoftware(Software software){
+        for (int i = 0; i < softwares.length; i++) {
+            if (softwares[i] != null && softwares[i].equals(software)){
+                softwares[i] = null;
+                break;
+            }
+        }
+    }
+
+    public int totalSoftwares(){
+        int count = 0;
+        for (Software software : softwares) {
+            if (software != null){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public void printSoftwares(){
+        System.out.println(String.format("%70s","").replace(" ", "="));
+        System.out.println(String.format("%-22s %-15s %10s %10s", "Name", "Version", "Price", "Size (MB)"));
+        System.out.println(String.format("%70s","").replace(" ", "="));
+        for(Software software: softwares){
+            if (software != null){
+                System.out.println(software);
+            }
+        }
+        System.out.println(String.format("%70s","").replace(" ", "="));
+    }
+
+    public int searchSoftware(String name){
+        for (int i = 0; i < softwares.length; i++) {
+            if (softwares[i] != null && softwares[i].getName().equalsIgnoreCase(name)){
+                return i;
+            }
+        }
+        return -1;
+    }   
 }
 
