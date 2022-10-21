@@ -118,7 +118,7 @@ public class DataHandler {
             }
         }
 
-        // Closing buffers
+        // Closing buffer
         employeeWriter.close();
         labWriter.close();
         pcWriter.close();
