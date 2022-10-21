@@ -165,6 +165,7 @@ public class Menu {
                     lab.addSoftware(software);
                 }
             }
+            System.out.println("Software added successfully!\n");
         } 
         else {
             int index = department.searchLab(labName);
@@ -191,6 +192,7 @@ public class Menu {
                     }
                 }
             }
+            System.out.println("Software removed successfully!\n");
         } 
         else {
             int index = department.searchLab(labName);
@@ -220,7 +222,7 @@ public class Menu {
             System.out.println("Lab not found!\n");
         }
     }
-    
+
     // Scans a software from Input and returns it (Helper of Menu.addSoftware)
     public static Software getSoftware() {
         System.out.println("Enter Software Name: ");
