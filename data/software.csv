@@ -41,27 +41,6 @@ Fleet,Text Editor,Jet Brains,5.8,2529,1
 PyCharm,IDE,Jet Brains,0.32,2443,1
 GitHub,Version Control,Microsoft,6.9.3,2284,1
 Gmail,Mail,Google,0.58,1568,1
-Teams,Office,Microsoft,4.3.9,803,3
-Excel,Office,Microsoft,7.6.6,799,3
-Word,Office,Microsoft,0.91,1467,3
-Power Point,Office,Microsoft,8.66,786,3
-MS Access,Office,Microsoft,1.9.2,1915,3
-One Note,Office,Microsoft,0.6.9,1494,3
-To Do,Office,Microsoft,3.1.7,521,3
-One Drive,Drive,Microsoft,3.82,2096,3
-Edge,Browser,Microsoft,9.42,544,3
-Chrome,Browser,Google,3.35,2142,3
-Google Drive,Drive,Google,0.2.3,2490,3
-Google Docs,Productivity,Google,4.9.7,2298,3
-Google Sheets,Productivity,Google,0.9.4,1503,3
-Power BI,Business,Power BI,4.8.5,2524,3
-Tableu,Business,Tableu,0.2.5,2665,3
-VS Code,Text Editor,Microsoft,0.55,2267,3
-IntelliJ IDEA,IDE,Jet Brains,0.2.4,741,3
-Fleet,Text Editor,Jet Brains,7.4,1024,3
-PyCharm,IDE,Jet Brains,4.8.9,2413,3
-GitHub,Version Control,Microsoft,0.3.4,1184,3
-Gmail,Mail,Google,5.5.6,2569,3
 Teams,Office,Microsoft,0.6.8,1605,2
 Excel,Office,Microsoft,0.62,2658,2
 Word,Office,Microsoft,0.5.9,2946,2
@@ -83,6 +62,27 @@ Fleet,Text Editor,Jet Brains,0.48,2421,2
 PyCharm,IDE,Jet Brains,8.9,2356,2
 GitHub,Version Control,Microsoft,8.9,786,2
 Gmail,Mail,Google,0.1.5,501,2
+Teams,Office,Microsoft,4.3.9,803,3
+Excel,Office,Microsoft,7.6.6,799,3
+Word,Office,Microsoft,0.91,1467,3
+Power Point,Office,Microsoft,8.66,786,3
+MS Access,Office,Microsoft,1.9.2,1915,3
+One Note,Office,Microsoft,0.6.9,1494,3
+To Do,Office,Microsoft,3.1.7,521,3
+One Drive,Drive,Microsoft,3.82,2096,3
+Edge,Browser,Microsoft,9.42,544,3
+Chrome,Browser,Google,3.35,2142,3
+Google Drive,Drive,Google,0.2.3,2490,3
+Google Docs,Productivity,Google,4.9.7,2298,3
+Google Sheets,Productivity,Google,0.9.4,1503,3
+Power BI,Business,Power BI,4.8.5,2524,3
+Tableu,Business,Tableu,0.2.5,2665,3
+VS Code,Text Editor,Microsoft,0.55,2267,3
+IntelliJ IDEA,IDE,Jet Brains,0.2.4,741,3
+Fleet,Text Editor,Jet Brains,7.4,1024,3
+PyCharm,IDE,Jet Brains,4.8.9,2413,3
+GitHub,Version Control,Microsoft,0.3.4,1184,3
+Gmail,Mail,Google,5.5.6,2569,3
 Teams,Office,Microsoft,5.6.9,2234,4
 Excel,Office,Microsoft,9.8.9,465,4
 Word,Office,Microsoft,0.99,2579,4
