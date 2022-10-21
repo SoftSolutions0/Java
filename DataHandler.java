@@ -110,7 +110,7 @@ public class DataHandler {
                     if (software != null) {
                         strToAppend = String.format("%s,%s,%s,%s,%d,%d",
                                 software.getName(), software.getType(), software.getCompany(),
-                                software.getVersion(), lab.getID());
+                                software.getVersion(), software.getSize(), lab.getID());
                         softwareWriter.write(strToAppend);
                         softwareWriter.newLine();
                     }
