@@ -66,7 +66,7 @@ public class Software {
 
     @Override
     public String toString() {
-        return String.format("%-22s %-10s %-10s %7s %6d", name, type, company, version, size);
+        return String.format("%-18s %-15s %-15s %7s %6d", name, type, company, version, size);
     }
 
     @Override
