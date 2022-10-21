@@ -10,14 +10,17 @@ public class Menu {
             System.out.println(String.format("%32s", "").replace(" ", "="));
             System.out.println(String.format("%17s", "MENU"));
             System.out.println(String.format("%32s", "").replace(" ", "="));
-            System.out.println("1. Add a Lab");
-            System.out.println("2. Remove a Lab");
-            System.out.println("3. Add PC to a Lab");
-            System.out.println("4. Remove PC from a Lab");
-            System.out.println("5. Print Labs");
-            System.out.println("6. Print PCs of a Lab");
-            System.out.println("7. Print Department Info");
-            System.out.println("8. Exit Program");
+            System.out.println(" 1. Add a Lab");
+            System.out.println(" 2. Remove a Lab");
+            System.out.println(" 3. Add PC to a Lab");
+            System.out.println(" 4. Remove PC from a Lab");
+            System.out.println(" 5. Add Software to Lab(s)");
+            System.out.println(" 6. Remove Software from Lab(s)");
+            System.out.println(" 7. Print Labs");
+            System.out.println(" 8. Print PCs of a Lab");
+            System.out.println(" 9. Print Softwares of a Lab");
+            System.out.println("10. Print Department Info");
+            System.out.println("11. Exit Program");
             System.out.println(String.format("%32s", "").replace(" ", "="));
             System.out.println("Enter your choice: ");
             int choice = sc.nextInt();
@@ -42,18 +45,30 @@ public class Menu {
                     if (Menu.navigate() == 0) {break menu;}
                     break;
                 case 5:
-                    department.printLabs();
+                    Menu.addSoftware(department);
                     if (Menu.navigate() == 0) {break menu;}
                     break;
                 case 6:
-                    Menu.printPCs(department);
+                    Menu.removeSoftware(department);
                     if (Menu.navigate() == 0) {break menu;}
                     break;
                 case 7:
-                    System.out.println(department);
+                    department.printLabs();
                     if (Menu.navigate() == 0) {break menu;}
                     break;
                 case 8:
+                    Menu.printPCs(department);
+                    if (Menu.navigate() == 0) {break menu;}
+                    break;
+                case 9:
+                    Menu.printSoftwares(department);
+                    if (Menu.navigate() == 0) {break menu;}
+                    break;
+                case 10:
+                    System.out.println(department);
+                    if (Menu.navigate() == 0) {break menu;}
+                    break;
+                case 11:
                     sc.close();
                     break menu;
                 default:
@@ -138,6 +153,87 @@ public class Menu {
         } else {
             System.out.println("Lab not found!\n");
         }
+    }
+
+    public static void addSoftware(Department department) {
+        System.out.println("Enter Lab Name (0 to add in all labs): ");
+        String labName = sc.nextLine();
+        if (labName.equals("0")) {
+            Software software = getSoftware();
+            for (Lab lab : department.getLabs()) {
+                if (lab != null) {
+                    lab.addSoftware(software);
+                }
+            }
+        } 
+        else {
+            int index = department.searchLab(labName);
+            if (index != -1) {
+                department.getLabs()[index].addSoftware(getSoftware());
+                System.out.println("Software added successfully!\n");
+            } else {
+                System.out.println("Lab not found!\n");
+            }
+        }
+    }
+
+    public static void removeSoftware(Department department) {
+        System.out.println("Enter Lab Name (0 to remove from all labs): ");
+        String labName = sc.nextLine();
+        if (labName.equals("0")) {
+            System.out.println("Enter Software Name: ");
+            String softwareName = sc.nextLine();
+            for (Lab lab : department.getLabs()) {
+                if (lab != null) {
+                    int index = lab.searchSoftware(softwareName);
+                    if (index != -1) {
+                        lab.removeSoftware(lab.getSoftwares()[index]);
+                    }
+                }
+            }
+        } 
+        else {
+            int index = department.searchLab(labName);
+            if (index != -1) {
+                System.out.println("Enter Software Name: ");
+                String softwareName = sc.nextLine();
+                int index2 = department.getLabs()[index].searchSoftware(softwareName);
+                if (index2 != -1) {
+                    department.getLabs()[index].removeSoftware(department.getLabs()[index].getSoftwares()[index2]);
+                    System.out.println("Software removed successfully!\n");
+                } else {
+                    System.out.println("Software not found!\n");
+                }
+            } else {
+                System.out.println("Lab not found!\n");
+            }
+        }
+    }
+
+    public static void printSoftwares(Department department) {
+        System.out.println("Enter Lab Name: ");
+        String labName = sc.nextLine();
+        int index = department.searchLab(labName);
+        if (index != -1) {
+            department.getLabs()[index].printSoftwares();
+        } else {
+            System.out.println("Lab not found!\n");
+        }
+    }
+    
+    // Scans a software from Input and returns it (Helper of Menu.addSoftware)
+    public static Software getSoftware() {
+        System.out.println("Enter Software Name: ");
+        String softwareName = sc.nextLine();
+        System.out.println("Enter type of " + softwareName + ": ");
+        String softwareType = sc.nextLine();
+        System.out.println("Enter Company of " + softwareName + ": ");
+        String softwareCompany = sc.nextLine();
+        System.out.println("Enter Version of " + softwareName + ": ");
+        String softwareVersion = sc.nextLine();
+        System.out.println("Enter Size of " + softwareName + " (MB): ");
+        int softwareSize = sc.nextInt();
+        return new Software(softwareName, softwareType, softwareCompany, softwareVersion, softwareSize);
     }
 
     public static int navigate() {
