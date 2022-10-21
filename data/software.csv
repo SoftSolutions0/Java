@@ -20,6 +20,7 @@ Fleet,Text Editor,Jet Brains,6.94,1969,0
 PyCharm,IDE,Jet Brains,0.9.9,1145,0
 GitHub,Version Control,Microsoft,2.72,1398,0
 Gmail,Mail,Google,0.4.6,695,0
+Photo Shop,Photo Editing,Adobe,3.4.5,2359,0
 Teams,Office,Microsoft,5.7.2,2694,1
 Excel,Office,Microsoft,0.76,2317,1
 Word,Office,Microsoft,0.48,1648,1
@@ -41,6 +42,7 @@ Fleet,Text Editor,Jet Brains,5.8,2529,1
 PyCharm,IDE,Jet Brains,0.32,2443,1
 GitHub,Version Control,Microsoft,6.9.3,2284,1
 Gmail,Mail,Google,0.58,1568,1
+Photo Shop,Photo Editing,Adobe,3.4.5,2359,1
 Teams,Office,Microsoft,0.6.8,1605,2
 Excel,Office,Microsoft,0.62,2658,2
 Word,Office,Microsoft,0.5.9,2946,2
@@ -62,6 +64,7 @@ Fleet,Text Editor,Jet Brains,0.48,2421,2
 PyCharm,IDE,Jet Brains,8.9,2356,2
 GitHub,Version Control,Microsoft,8.9,786,2
 Gmail,Mail,Google,0.1.5,501,2
+Photo Shop,Photo Editing,Adobe,3.4.5,2359,2
 Teams,Office,Microsoft,4.3.9,803,3
 Excel,Office,Microsoft,7.6.6,799,3
 Word,Office,Microsoft,0.91,1467,3
@@ -83,6 +86,7 @@ Fleet,Text Editor,Jet Brains,7.4,1024,3
 PyCharm,IDE,Jet Brains,4.8.9,2413,3
 GitHub,Version Control,Microsoft,0.3.4,1184,3
 Gmail,Mail,Google,5.5.6,2569,3
+Photo Shop,Photo Editing,Adobe,3.4.5,2359,3
 Teams,Office,Microsoft,5.6.9,2234,4
 Excel,Office,Microsoft,9.8.9,465,4
 Word,Office,Microsoft,0.99,2579,4
@@ -104,6 +108,7 @@ Fleet,Text Editor,Jet Brains,0.3.1,2991,4
 PyCharm,IDE,Jet Brains,0.74,1549,4
 GitHub,Version Control,Microsoft,1.18,576,4
 Gmail,Mail,Google,0.62,2086,4
+Photo Shop,Photo Editing,Adobe,3.4.5,2359,4
 Teams,Office,Microsoft,6.5,993,5
 Excel,Office,Microsoft,2.5,2267,5
 Word,Office,Microsoft,2.3.8,2913,5
@@ -125,6 +130,7 @@ Fleet,Text Editor,Jet Brains,7.0.8,2548,5
 PyCharm,IDE,Jet Brains,0.28,2645,5
 GitHub,Version Control,Microsoft,0.2.4,1192,5
 Gmail,Mail,Google,4.3,1426,5
+Photo Shop,Photo Editing,Adobe,3.4.5,2359,5
 Teams,Office,Microsoft,1.2,1879,6
 Excel,Office,Microsoft,6.7.6,1859,6
 Word,Office,Microsoft,6.0.7,2932,6
@@ -146,6 +152,7 @@ Fleet,Text Editor,Jet Brains,0.8.8,2298,6
 PyCharm,IDE,Jet Brains,8.1,1089,6
 GitHub,Version Control,Microsoft,2.5,1349,6
 Gmail,Mail,Google,0.1.7,2818,6
+Photo Shop,Photo Editing,Adobe,3.4.5,2359,6
 Teams,Office,Microsoft,2.9.0,766,7
 Excel,Office,Microsoft,0.2.4,1991,7
 Word,Office,Microsoft,0.26,1475,7
@@ -167,3 +174,4 @@ Fleet,Text Editor,Jet Brains,7.5,453,7
 PyCharm,IDE,Jet Brains,0.27,1603,7
 GitHub,Version Control,Microsoft,2.4,659,7
 Gmail,Mail,Google,6.6,1075,7
+Photo Shop,Photo Editing,Adobe,3.4.5,2359,7
