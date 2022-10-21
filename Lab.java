@@ -159,7 +159,7 @@ public class Lab {
 
     public void printSoftwares(){
         System.out.println(String.format("%70s","").replace(" ", "="));
-        System.out.println(String.format("%-22s %-15s %10s %10s", "Name", "Version", "Price", "Size (MB)"));
+        System.out.println(String.format("%-18s %-15s %-15s %7s %10s", "Name", "Type", "Company", "Version", "Size (MB)"));
         System.out.println(String.format("%70s","").replace(" ", "="));
         for(Software software: softwares){
             if (software != null){
