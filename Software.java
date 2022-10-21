@@ -1,13 +1,14 @@
 public class Software {
     
-    private String name, version, type;
+    private String name, version, type, company;
     private int size;
 
-    public Software(String name, String version, int size, String type) {
+    public Software(String name, String version, int size, String type, String company) {
         this.name = name;
         this.version = version;
         this.size = size;
         this.type = type;
+        this.company = company;
     }
 
     public Software(Software other) {
@@ -15,10 +16,15 @@ public class Software {
         this.version = other.getVersion();
         this.size = other.getSize();
         this.type = other.getType();
+        this.company = other.getCompany();
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getCompany() {
+        return company;
     }
 
     public int getSize() {
@@ -49,6 +55,10 @@ public class Software {
         this.version = version;
     }
 
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return new Software(this);
@@ -56,7 +66,7 @@ public class Software {
 
     @Override
     public String toString() {
-        return String.format("%-22s %-10s %7s %6d", name, type, version, size);
+        return String.format("%-22s %-10s %-10s %7s %6d", name, type, company, version, size);
     }
 
     @Override
