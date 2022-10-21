@@ -3,7 +3,7 @@ public class Software {
     private String name, version, type, company;
     private int size;
 
-    public Software(String name, String version, int size, String type, String company) {
+    public Software(String name, String type, String company, String version, int size) {
         this.name = name;
         this.version = version;
         this.size = size;
