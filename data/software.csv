@@ -1,177 +1,177 @@
 Name,Type,Company,Version,Size (MB),Lab ID
-Teams,Office,Microsoft,5.6.8,2698,0
-Excel,Office,Microsoft,0.8.9,1915,0
-Word,Office,Microsoft,2.1.7,1304,0
-Power Point,Office,Microsoft,8.52,2172,0
-MS Access,Office,Microsoft,9.3.9,2120,0
-One Note,Office,Microsoft,3.5,2436,0
-To Do,Office,Microsoft,0.42,2925,0
-One Drive,Drive,Microsoft,1.84,726,0
-Edge,Browser,Microsoft,0.8.4,2472,0
-Chrome,Browser,Google,0.25,2665,0
-Google Drive,Drive,Google,1.0.4,2891,0
-Google Docs,Productivity,Google,0.72,1842,0
-Google Sheets,Productivity,Google,2.9.2,2136,0
-Power BI,Business,Power BI,0.5.2,926,0
-Tableu,Business,Tableu,0.2.5,2558,0
-VS Code,Text Editor,Microsoft,9.0.2,1106,0
-IntelliJ IDEA,IDE,Jet Brains,5.07,2960,0
-Fleet,Text Editor,Jet Brains,6.94,1969,0
-PyCharm,IDE,Jet Brains,0.9.9,1145,0
-GitHub,Version Control,Microsoft,2.72,1398,0
-Gmail,Mail,Google,0.4.6,695,0
-Photo Shop,Photo Editing,Adobe,3.4.5,2359,0
-Teams,Office,Microsoft,5.7.2,2694,1
-Excel,Office,Microsoft,0.76,2317,1
-Word,Office,Microsoft,0.48,1648,1
-Power Point,Office,Microsoft,0.31,1306,1
-MS Access,Office,Microsoft,2.17,1947,1
-One Note,Office,Microsoft,1.3.1,1324,1
-To Do,Office,Microsoft,9.3,2806,1
-One Drive,Drive,Microsoft,5.6.4,894,1
-Edge,Browser,Microsoft,9.54,1107,1
-Chrome,Browser,Google,0.4.0,766,1
-Google Drive,Drive,Google,8.2,1314,1
-Google Docs,Productivity,Google,2.9,2607,1
-Google Sheets,Productivity,Google,4.1.8,2302,1
-Power BI,Business,Power BI,0.2.8,2050,1
-Tableu,Business,Tableu,2.6,1053,1
-VS Code,Text Editor,Microsoft,5.4,1714,1
-IntelliJ IDEA,IDE,Jet Brains,0.62,763,1
-Fleet,Text Editor,Jet Brains,5.8,2529,1
-PyCharm,IDE,Jet Brains,0.32,2443,1
-GitHub,Version Control,Microsoft,6.9.3,2284,1
-Gmail,Mail,Google,0.58,1568,1
-Photo Shop,Photo Editing,Adobe,3.4.5,2359,1
-Teams,Office,Microsoft,0.6.8,1605,2
-Excel,Office,Microsoft,0.62,2658,2
-Word,Office,Microsoft,0.5.9,2946,2
-Power Point,Office,Microsoft,0.3.7,636,2
-MS Access,Office,Microsoft,5.5.4,2250,2
-One Note,Office,Microsoft,0.15,2919,2
-To Do,Office,Microsoft,8.9,2485,2
-One Drive,Drive,Microsoft,0.26,2424,2
-Edge,Browser,Microsoft,7.07,1021,2
-Chrome,Browser,Google,5.4,598,2
-Google Drive,Drive,Google,0.13,2821,2
-Google Docs,Productivity,Google,5.32,1879,2
-Google Sheets,Productivity,Google,3.4.2,2751,2
-Power BI,Business,Power BI,9.93,951,2
-Tableu,Business,Tableu,9.21,2150,2
-VS Code,Text Editor,Microsoft,0.3.5,1328,2
-IntelliJ IDEA,IDE,Jet Brains,0.96,1134,2
-Fleet,Text Editor,Jet Brains,0.48,2421,2
-PyCharm,IDE,Jet Brains,8.9,2356,2
-GitHub,Version Control,Microsoft,8.9,786,2
-Gmail,Mail,Google,0.1.5,501,2
-Photo Shop,Photo Editing,Adobe,3.4.5,2359,2
-Teams,Office,Microsoft,4.3.9,803,3
-Excel,Office,Microsoft,7.6.6,799,3
-Word,Office,Microsoft,0.91,1467,3
-Power Point,Office,Microsoft,8.66,786,3
-MS Access,Office,Microsoft,1.9.2,1915,3
-One Note,Office,Microsoft,0.6.9,1494,3
-To Do,Office,Microsoft,3.1.7,521,3
-One Drive,Drive,Microsoft,3.82,2096,3
-Edge,Browser,Microsoft,9.42,544,3
-Chrome,Browser,Google,3.35,2142,3
-Google Drive,Drive,Google,0.2.3,2490,3
-Google Docs,Productivity,Google,4.9.7,2298,3
-Google Sheets,Productivity,Google,0.9.4,1503,3
-Power BI,Business,Power BI,4.8.5,2524,3
-Tableu,Business,Tableu,0.2.5,2665,3
-VS Code,Text Editor,Microsoft,0.55,2267,3
-IntelliJ IDEA,IDE,Jet Brains,0.2.4,741,3
-Fleet,Text Editor,Jet Brains,7.4,1024,3
-PyCharm,IDE,Jet Brains,4.8.9,2413,3
-GitHub,Version Control,Microsoft,0.3.4,1184,3
-Gmail,Mail,Google,5.5.6,2569,3
-Photo Shop,Photo Editing,Adobe,3.4.5,2359,3
-Teams,Office,Microsoft,5.6.9,2234,4
-Excel,Office,Microsoft,9.8.9,465,4
-Word,Office,Microsoft,0.99,2579,4
-Power Point,Office,Microsoft,2.1.8,2711,4
-MS Access,Office,Microsoft,0.37,511,4
-One Note,Office,Microsoft,8.9.0,2971,4
-To Do,Office,Microsoft,8.1,2919,4
-One Drive,Drive,Microsoft,2.51,1239,4
-Edge,Browser,Microsoft,7,1405,4
-Chrome,Browser,Google,7.14,2895,4
-Google Drive,Drive,Google,0.46,2284,4
-Google Docs,Productivity,Google,2.18,1856,4
-Google Sheets,Productivity,Google,0.5.8,2566,4
-Power BI,Business,Power BI,9.09,2950,4
-Tableu,Business,Tableu,2.71,1003,4
-VS Code,Text Editor,Microsoft,0.36,759,4
-IntelliJ IDEA,IDE,Jet Brains,1.2.3,1987,4
-Fleet,Text Editor,Jet Brains,0.3.1,2991,4
-PyCharm,IDE,Jet Brains,0.74,1549,4
-GitHub,Version Control,Microsoft,1.18,576,4
-Gmail,Mail,Google,0.62,2086,4
-Photo Shop,Photo Editing,Adobe,3.4.5,2359,4
-Teams,Office,Microsoft,6.5,993,5
-Excel,Office,Microsoft,2.5,2267,5
-Word,Office,Microsoft,2.3.8,2913,5
-Power Point,Office,Microsoft,0.25,2447,5
-MS Access,Office,Microsoft,0.5.6,2823,5
-One Note,Office,Microsoft,1.3.3,1462,5
-To Do,Office,Microsoft,2.17,1918,5
-One Drive,Drive,Microsoft,0.1.3,2227,5
-Edge,Browser,Microsoft,0.51,2503,5
-Chrome,Browser,Google,6.84,2974,5
-Google Drive,Drive,Google,2.6,986,5
-Google Docs,Productivity,Google,0.8.8,1813,5
-Google Sheets,Productivity,Google,0.93,2743,5
-Power BI,Business,Power BI,0.34,2944,5
-Tableu,Business,Tableu,4.43,693,5
-VS Code,Text Editor,Microsoft,3.61,2910,5
-IntelliJ IDEA,IDE,Jet Brains,8.03,1189,5
-Fleet,Text Editor,Jet Brains,7.0.8,2548,5
-PyCharm,IDE,Jet Brains,0.28,2645,5
-GitHub,Version Control,Microsoft,0.2.4,1192,5
-Gmail,Mail,Google,4.3,1426,5
-Photo Shop,Photo Editing,Adobe,3.4.5,2359,5
-Teams,Office,Microsoft,1.2,1879,6
-Excel,Office,Microsoft,6.7.6,1859,6
-Word,Office,Microsoft,6.0.7,2932,6
-Power Point,Office,Microsoft,0.2.1,2653,6
-MS Access,Office,Microsoft,0.8,665,6
-One Note,Office,Microsoft,6.5,491,6
-To Do,Office,Microsoft,6.1,1938,6
-One Drive,Drive,Microsoft,0.7.7,1771,6
-Edge,Browser,Microsoft,1.06,1765,6
-Chrome,Browser,Google,2.07,2531,6
-Google Drive,Drive,Google,7.6,2652,6
-Google Docs,Productivity,Google,7.5,1361,6
-Google Sheets,Productivity,Google,0.5.4,1744,6
-Power BI,Business,Power BI,6.1,2737,6
-Tableu,Business,Tableu,8.2.7,2713,6
-VS Code,Text Editor,Microsoft,6.11,1584,6
-IntelliJ IDEA,IDE,Jet Brains,3.9.6,673,6
-Fleet,Text Editor,Jet Brains,0.8.8,2298,6
-PyCharm,IDE,Jet Brains,8.1,1089,6
-GitHub,Version Control,Microsoft,2.5,1349,6
-Gmail,Mail,Google,0.1.7,2818,6
-Photo Shop,Photo Editing,Adobe,3.4.5,2359,6
-Teams,Office,Microsoft,2.9.0,766,7
-Excel,Office,Microsoft,0.2.4,1991,7
-Word,Office,Microsoft,0.26,1475,7
-Power Point,Office,Microsoft,0.4.9,1838,7
-MS Access,Office,Microsoft,9.93,2677,7
-One Note,Office,Microsoft,0.98,1169,7
-To Do,Office,Microsoft,0.9.1,1619,7
-One Drive,Drive,Microsoft,5.9.5,2992,7
-Edge,Browser,Microsoft,2.1.1,856,7
-Chrome,Browser,Google,0.23,1740,7
-Google Drive,Drive,Google,0.6.0,968,7
-Google Docs,Productivity,Google,4.5,2081,7
-Google Sheets,Productivity,Google,0.47,488,7
-Power BI,Business,Power BI,0.9,520,7
-Tableu,Business,Tableu,5.1,969,7
-VS Code,Text Editor,Microsoft,0.66,894,7
-IntelliJ IDEA,IDE,Jet Brains,6.5,1401,7
-Fleet,Text Editor,Jet Brains,7.5,453,7
-PyCharm,IDE,Jet Brains,0.27,1603,7
-GitHub,Version Control,Microsoft,2.4,659,7
-Gmail,Mail,Google,6.6,1075,7
-Photo Shop,Photo Editing,Adobe,3.4.5,2359,7
+Teams,5.6.8,Office,Microsoft,2698,1
+Excel,0.8.9,Office,Microsoft,1915,1
+Word,2.1.7,Office,Microsoft,1304,1
+Power Point,8.52,Office,Microsoft,2172,1
+MS Access,9.3.9,Office,Microsoft,2120,1
+One Note,3.5,Office,Microsoft,2436,1
+To Do,0.42,Office,Microsoft,2925,1
+One Drive,1.84,Drive,Microsoft,726,1
+Edge,0.8.4,Browser,Microsoft,2472,1
+Chrome,0.25,Browser,Google,2665,1
+Google Drive,1.0.4,Drive,Google,2891,1
+Google Docs,0.72,Productivity,Google,1842,1
+Google Sheets,2.9.2,Productivity,Google,2136,1
+Power BI,0.5.2,Business,Power BI,926,1
+Tableu,0.2.5,Business,Tableu,2558,1
+VS Code,9.0.2,Text Editor,Microsoft,1106,1
+IntelliJ IDEA,5.07,IDE,Jet Brains,2960,1
+Fleet,6.94,Text Editor,Jet Brains,1969,1
+PyCharm,0.9.9,IDE,Jet Brains,1145,1
+GitHub,2.72,Version Control,Microsoft,1398,1
+Gmail,0.4.6,Mail,Google,695,1
+Photo Shop,3.4.5,Photo Editing,Adobe,2359,1
+Teams,5.7.2,Office,Microsoft,2694,2
+Excel,0.76,Office,Microsoft,2317,2
+Word,0.48,Office,Microsoft,1648,2
+Power Point,0.31,Office,Microsoft,1306,2
+MS Access,2.17,Office,Microsoft,1947,2
+One Note,1.3.1,Office,Microsoft,1324,2
+To Do,9.3,Office,Microsoft,2806,2
+One Drive,5.6.4,Drive,Microsoft,894,2
+Edge,9.54,Browser,Microsoft,1107,2
+Chrome,0.4.0,Browser,Google,766,2
+Google Drive,8.2,Drive,Google,1314,2
+Google Docs,2.9,Productivity,Google,2607,2
+Google Sheets,4.1.8,Productivity,Google,2302,2
+Power BI,0.2.8,Business,Power BI,2050,2
+Tableu,2.6,Business,Tableu,1053,2
+VS Code,5.4,Text Editor,Microsoft,1714,2
+IntelliJ IDEA,0.62,IDE,Jet Brains,763,2
+Fleet,5.8,Text Editor,Jet Brains,2529,2
+PyCharm,0.32,IDE,Jet Brains,2443,2
+GitHub,6.9.3,Version Control,Microsoft,2284,2
+Gmail,0.58,Mail,Google,1568,2
+Photo Shop,3.4.5,Photo Editing,Adobe,2359,2
+Teams,0.6.8,Office,Microsoft,1605,3
+Excel,0.62,Office,Microsoft,2658,3
+Word,0.5.9,Office,Microsoft,2946,3
+Power Point,0.3.7,Office,Microsoft,636,3
+MS Access,5.5.4,Office,Microsoft,2250,3
+One Note,0.15,Office,Microsoft,2919,3
+To Do,8.9,Office,Microsoft,2485,3
+One Drive,0.26,Drive,Microsoft,2424,3
+Edge,7.07,Browser,Microsoft,1021,3
+Chrome,5.4,Browser,Google,598,3
+Google Drive,0.13,Drive,Google,2821,3
+Google Docs,5.32,Productivity,Google,1879,3
+Google Sheets,3.4.2,Productivity,Google,2751,3
+Power BI,9.93,Business,Power BI,951,3
+Tableu,9.21,Business,Tableu,2150,3
+VS Code,0.3.5,Text Editor,Microsoft,1328,3
+IntelliJ IDEA,0.96,IDE,Jet Brains,1134,3
+Fleet,0.48,Text Editor,Jet Brains,2421,3
+PyCharm,8.9,IDE,Jet Brains,2356,3
+GitHub,8.9,Version Control,Microsoft,786,3
+Gmail,0.1.5,Mail,Google,501,3
+Photo Shop,3.4.5,Photo Editing,Adobe,2359,3
+Teams,4.3.9,Office,Microsoft,803,4
+Excel,7.6.6,Office,Microsoft,799,4
+Word,0.91,Office,Microsoft,1467,4
+Power Point,8.66,Office,Microsoft,786,4
+MS Access,1.9.2,Office,Microsoft,1915,4
+One Note,0.6.9,Office,Microsoft,1494,4
+To Do,3.1.7,Office,Microsoft,521,4
+One Drive,3.82,Drive,Microsoft,2096,4
+Edge,9.42,Browser,Microsoft,544,4
+Chrome,3.35,Browser,Google,2142,4
+Google Drive,0.2.3,Drive,Google,2490,4
+Google Docs,4.9.7,Productivity,Google,2298,4
+Google Sheets,0.9.4,Productivity,Google,1503,4
+Power BI,4.8.5,Business,Power BI,2524,4
+Tableu,0.2.5,Business,Tableu,2665,4
+VS Code,0.55,Text Editor,Microsoft,2267,4
+IntelliJ IDEA,0.2.4,IDE,Jet Brains,741,4
+Fleet,7.4,Text Editor,Jet Brains,1024,4
+PyCharm,4.8.9,IDE,Jet Brains,2413,4
+GitHub,0.3.4,Version Control,Microsoft,1184,4
+Gmail,5.5.6,Mail,Google,2569,4
+Photo Shop,3.4.5,Photo Editing,Adobe,2359,4
+Teams,5.6.9,Office,Microsoft,2234,5
+Excel,9.8.9,Office,Microsoft,465,5
+Word,0.99,Office,Microsoft,2579,5
+Power Point,2.1.8,Office,Microsoft,2711,5
+MS Access,0.37,Office,Microsoft,511,5
+One Note,8.9.0,Office,Microsoft,2971,5
+To Do,8.1,Office,Microsoft,2919,5
+One Drive,2.51,Drive,Microsoft,1239,5
+Edge,7,Browser,Microsoft,1405,5
+Chrome,7.14,Browser,Google,2895,5
+Google Drive,0.46,Drive,Google,2284,5
+Google Docs,2.18,Productivity,Google,1856,5
+Google Sheets,0.5.8,Productivity,Google,2566,5
+Power BI,9.09,Business,Power BI,2950,5
+Tableu,2.71,Business,Tableu,1003,5
+VS Code,0.36,Text Editor,Microsoft,759,5
+IntelliJ IDEA,1.2.3,IDE,Jet Brains,1987,5
+Fleet,0.3.1,Text Editor,Jet Brains,2991,5
+PyCharm,0.74,IDE,Jet Brains,1549,5
+GitHub,1.18,Version Control,Microsoft,576,5
+Gmail,0.62,Mail,Google,2086,5
+Photo Shop,3.4.5,Photo Editing,Adobe,2359,5
+Teams,6.5,Office,Microsoft,993,6
+Excel,2.5,Office,Microsoft,2267,6
+Word,2.3.8,Office,Microsoft,2913,6
+Power Point,0.25,Office,Microsoft,2447,6
+MS Access,0.5.6,Office,Microsoft,2823,6
+One Note,1.3.3,Office,Microsoft,1462,6
+To Do,2.17,Office,Microsoft,1918,6
+One Drive,0.1.3,Drive,Microsoft,2227,6
+Edge,0.51,Browser,Microsoft,2503,6
+Chrome,6.84,Browser,Google,2974,6
+Google Drive,2.6,Drive,Google,986,6
+Google Docs,0.8.8,Productivity,Google,1813,6
+Google Sheets,0.93,Productivity,Google,2743,6
+Power BI,0.34,Business,Power BI,2944,6
+Tableu,4.43,Business,Tableu,693,6
+VS Code,3.61,Text Editor,Microsoft,2910,6
+IntelliJ IDEA,8.03,IDE,Jet Brains,1189,6
+Fleet,7.0.8,Text Editor,Jet Brains,2548,6
+PyCharm,0.28,IDE,Jet Brains,2645,6
+GitHub,0.2.4,Version Control,Microsoft,1192,6
+Gmail,4.3,Mail,Google,1426,6
+Photo Shop,3.4.5,Photo Editing,Adobe,2359,6
+Teams,1.2,Office,Microsoft,1879,7
+Excel,6.7.6,Office,Microsoft,1859,7
+Word,6.0.7,Office,Microsoft,2932,7
+Power Point,0.2.1,Office,Microsoft,2653,7
+MS Access,0.8,Office,Microsoft,665,7
+One Note,6.5,Office,Microsoft,491,7
+To Do,6.1,Office,Microsoft,1938,7
+One Drive,0.7.7,Drive,Microsoft,1771,7
+Edge,1.06,Browser,Microsoft,1765,7
+Chrome,2.07,Browser,Google,2531,7
+Google Drive,7.6,Drive,Google,2652,7
+Google Docs,7.5,Productivity,Google,1361,7
+Google Sheets,0.5.4,Productivity,Google,1744,7
+Power BI,6.1,Business,Power BI,2737,7
+Tableu,8.2.7,Business,Tableu,2713,7
+VS Code,6.11,Text Editor,Microsoft,1584,7
+IntelliJ IDEA,3.9.6,IDE,Jet Brains,673,7
+Fleet,0.8.8,Text Editor,Jet Brains,2298,7
+PyCharm,8.1,IDE,Jet Brains,1089,7
+GitHub,2.5,Version Control,Microsoft,1349,7
+Gmail,0.1.7,Mail,Google,2818,7
+Photo Shop,3.4.5,Photo Editing,Adobe,2359,7
+Teams,2.9.0,Office,Microsoft,766,8
+Excel,0.2.4,Office,Microsoft,1991,8
+Word,0.26,Office,Microsoft,1475,8
+Power Point,0.4.9,Office,Microsoft,1838,8
+MS Access,9.93,Office,Microsoft,2677,8
+One Note,0.98,Office,Microsoft,1169,8
+To Do,0.9.1,Office,Microsoft,1619,8
+One Drive,5.9.5,Drive,Microsoft,2992,8
+Edge,2.1.1,Browser,Microsoft,856,8
+Chrome,0.23,Browser,Google,1740,8
+Google Drive,0.6.0,Drive,Google,968,8
+Google Docs,4.5,Productivity,Google,2081,8
+Google Sheets,0.47,Productivity,Google,488,8
+Power BI,0.9,Business,Power BI,520,8
+Tableu,5.1,Business,Tableu,969,8
+VS Code,0.66,Text Editor,Microsoft,894,8
+IntelliJ IDEA,6.5,IDE,Jet Brains,1401,8
+Fleet,7.5,Text Editor,Jet Brains,453,8
+PyCharm,0.27,IDE,Jet Brains,1603,8
+GitHub,2.4,Version Control,Microsoft,659,8
+Gmail,6.6,Mail,Google,1075,8
+Photo Shop,3.4.5,Photo Editing,Adobe,2359,8

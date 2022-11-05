@@ -1,16 +1,9 @@
-public class Employee {
-    private String firstName;
-    private String lastName;
-    private int ID;
-    private String designation;
-    static int count = 0;
+package LabManagement;
 
-    public Employee(String firstName, String lastName, String designation) {
-        this.ID = count++;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.designation = designation;
-    }
+public class Employee {
+    private int ID;
+    private String firstName, lastName, designation;
+    static int count = 0;
 
     public Employee(int ID, String firstName, String lastName, String designation) {
         this.ID = ID;
@@ -20,12 +13,22 @@ public class Employee {
         count++;
     }
 
-    // Copy Constructor
+    public Employee(String firstName, String lastName, String designation) {
+        this.ID = ++count;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.designation = designation;
+    }
+
     public Employee(Employee other) {
+        this.ID = other.getID();
         this.firstName = other.getFirstName();
         this.lastName = other.getLastName();
-        this.ID = count++;
         this.designation = other.getDesignation();
+    }
+
+    public int getID() {
+        return ID;
     }
 
     public String getDesignation() {
@@ -36,16 +39,12 @@ public class Employee {
         return firstName;
     }
 
-    public int getID() {
-        return ID;
-    }
-
     public String getLastName() {
         return lastName;
     }
 
-    public void setDesignation(String designation) {
-        this.designation = designation;
+    public String getName() {
+        return firstName + " " + lastName;
     }
 
     public void setFirstName(String firstName) {
@@ -56,13 +55,22 @@ public class Employee {
         this.lastName = lastName;
     }
 
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
     @Override
     public String toString() {
-        return firstName + " " + lastName;
+        return String.format("ID: %s, Name: %s %s, Desigantion: %s", ID, firstName, lastName, designation);
     }
 
     @Override
     protected Object clone() {
         return new Employee(this);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Employee && this.ID == ((Employee) obj).getID();
     }
 }

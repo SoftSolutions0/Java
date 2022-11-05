@@ -1,8 +1,7 @@
-# Lab Management
+## LAB MANAGEMENT
 
-OOP Assignment
+Source code of Assignement 2 for OOP (FA22)
 
-#### By:
+Submitted to: Sir [Muhammad Shahid Bhatti](https://github.com/mshahidbhatti)
 
- - Ahmed Abdullah
- - FA21-BCS-141
+
