@@ -13,12 +13,6 @@ public class Main {
             new Employee("Mr.", "Ali", "Labs Incharge")
         );
         
-        // Load Data from files
-        // try {
-        //     DataHandler.loadData(dpt1);
-        // } catch (Exception e) {
-        //     System.out.println("Files not found!");
-        // }
         DataHandler.loadData(dpt1);
 
         // Print Menu

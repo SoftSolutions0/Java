@@ -10,10 +10,27 @@ import java.io.BufferedWriter;
 
 public class DataHandler {
     // Files to deal with
-    static File employeeFile = new File("E:\\Lab-Management\\Lab-Management\\data\\employee.csv");
-    static File pcFile = new File("E:\\Lab-Management\\Lab-Management\\data\\pc.csv");
-    static File labFile = new File("E:\\Lab-Management\\Lab-Management\\data\\lab.csv");
-    static File softwareFile = new File("E:\\Lab-Management\\Lab-Management\\data\\software.csv");
+    static File employeeFile = new File("E:\\Java\\LabManagement\\data\\employee.csv");
+    static File pcFile = new File("E:\\Java\\LabManagement\\data\\pc.csv");
+    static File labFile = new File("E:\\Java\\LabManagement\\data\\lab.csv");
+    static File softwareFile = new File("E:\\Java\\LabManagement\\data\\software.csv");
+
+    static {
+
+        if (!employeeFile.exists()) {
+            throw new RuntimeException("Employee file not found!"); 
+        }
+        if (!pcFile.exists()) {
+            throw new RuntimeException("PC file not found!"); 
+        }
+        if (!labFile.exists()) {
+            throw new RuntimeException("Lab file not found!"); 
+        }
+        if (!softwareFile.exists()) {
+            throw new RuntimeException("Software file not found!"); 
+        }
+        
+    }
 
     // To Load Data in memory from files
     public static void loadData(Department department) throws IOException {
